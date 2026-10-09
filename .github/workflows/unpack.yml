@@ -1,1 +1,19 @@
-
+name: Unpack upload
+on:
+  push:
+    paths: ["voice-bot.zip"]
+permissions:
+  contents: write
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          unzip -o voice-bot.zip
+          rm voice-bot.zip
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Unpack voice-bot.zip"
+          git push
