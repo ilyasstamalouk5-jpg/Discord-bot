@@ -1,0 +1,17 @@
+packages:
+  - lib/db
+  - services/discord-bot
+
+autoInstallPeers: false
+
+catalog:
+  '@types/node': 25.9.6
+  drizzle-orm: 0.45.2
+  tsx: 4.23.13
+  zod: ^3.25.76
+
+# Only install versions that have been public for at least a day.
+minimumReleaseAge: 1440
+
+onlyBuiltDependencies:
+  - esbuild

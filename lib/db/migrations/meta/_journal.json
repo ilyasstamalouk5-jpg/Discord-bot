@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791485879398,
+      "tag": "0000_init_discord_bot",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791572279398,
+      "tag": "0001_add_voice_session_heartbeat",
+      "breakpoints": true
+    }
+  ]
+}
